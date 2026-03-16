@@ -76,7 +76,7 @@ sendMessage.addEventListener("click", (e) => {
     } else {
         messageError.classList.add("hidden");  
     }
-    if (hiChecked.checked || getChecked.checked && name.value.trim() !== "" && email.value.includes("@") && message.value.trim() !== "") { 
+    if (name.value.trim() !== " " && email.value.includes("@") && message.value.trim() !== " " && (hiChecked.checked || getChecked.checked)) { 
         alert("Message sent successfully!");
     }
 });
